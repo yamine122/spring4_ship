@@ -8,10 +8,10 @@
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<contributors>
-		<contributor>
-			<name>Lee Jeong-Seung</name>
-			<email>wjdtmd92@gmail.com</email>
-		</contributor>
+	<contributor>
+		<name>Yeo Yo-Han</name>
+		<email>maybehans@gmail.com</email>
+	</contributor>
 	</contributors>
 	<properties>
 		<java-version>1.8</java-version>
@@ -22,16 +22,16 @@
 		<servlet-version>2.5</servlet-version>
 		<jsp-version>2.1</jsp-version>
 		<jstl-version>1.2</jstl-version>
-		<junit-version>4.7</junit-version>
 		<log4j-version>1.2.15</log4j-version>
+		<junit-version>4.7</junit-version>
 		<inject-version>1</inject-version>
-		<mysql-version>5.1.6</mysql-version>
+		<mysql-version>8.0.15</mysql-version>
 		<mybatis-version>3.4.6</mybatis-version>
-    	<mybatis-spring-version>1.3.2</mybatis-spring-version>
+		<mybatis-spring-version>1.3.2</mybatis-spring-version>
 		<jackson-version>2.9.8</jackson-version>
-		
 	</properties>
 	<dependencies>
+	
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -45,42 +45,42 @@
 				 </exclusion>
 			</exclusions>
 		</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-webmvc</artifactId>
-				<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-	   	 		<groupId>org.springframework</groupId>
-	   			<artifactId>spring-web</artifactId>
-	  	 		<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-	   			<groupId>org.springframework</groupId>
-	    		<artifactId>spring-beans</artifactId>
-	    		<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-	    		<groupId>org.springframework</groupId>
-	    		<artifactId>spring-oxm</artifactId>
-	    		<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-	   			<groupId>org.springframework</groupId>
-	   			<artifactId>spring-core</artifactId>
-	  			<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-	   		 	<groupId>org.springframework</groupId>
-	    		<artifactId>spring-context-support</artifactId>
-	   			<version>${spring-version}</version>
-			</dependency>
-			<dependency>
-	   			<groupId>org.springframework</groupId>
-	   			<artifactId>spring-jdbc</artifactId>
-	   			<version>${spring-version}</version>
-			</dependency>
-		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+		<dependency>
+             <groupId>org.springframework</groupId>
+   			 <artifactId>spring-web</artifactId>
+ 		     <version>${spring-version}</version>
+		</dependency>
+		<dependency>
+   			 <groupId>org.springframework</groupId>
+    		 <artifactId>spring-beans</artifactId>
+    		 <version>${spring-version}</version>
+		</dependency>
+		<dependency>
+   			 <groupId>org.springframework</groupId>
+  		     <artifactId>spring-oxm</artifactId>
+  		     <version>${spring-version}</version>
+		</dependency>
+		<dependency>
+    		 <groupId>org.springframework</groupId>
+   			 <artifactId>spring-core</artifactId>
+   			 <version>${spring-version}</version>
+		</dependency>
+		<dependency>
+   			 <groupId>org.springframework</groupId>
+  		     <artifactId>spring-context-support</artifactId>
+  		     <version>${spring-version}</version>
+		</dependency>
+		<dependency>
+   			 <groupId>org.springframework</groupId>
+  		     <artifactId>spring-jdbc</artifactId>
+  			 <version>${spring-version}</version>
+		</dependency>
+				
 		<!-- AspectJ -->
 		<dependency>
 			<groupId>org.aspectj</groupId>
@@ -157,45 +157,46 @@
 			<version>${jstl-version}</version>
 		</dependency>
 		<dependency>
-    		<groupId>org.projectlombok</groupId>
-    		<artifactId>lombok</artifactId>
-   			<version>${lombok-version}</version>
-    		<scope>provided</scope>
-		</dependency>
-		<!-- Database -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>${mysql-version}</version>
-		</dependency>
-		<dependency>
-        	<groupId>org.mybatis</groupId>
-         	<artifactId>mybatis</artifactId>
-          	<version>${mybatis-version}</version>
-    	</dependency>
-    	<dependency>
-        	<groupId>org.mybatis</groupId>
-       		<artifactId>mybatis-spring</artifactId>
-       		<version>${mybatis-spring-version}</version>
-   		</dependency>
-		<!-- Jackson -->
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-			<version>${jackson-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-core</artifactId>
-			<version>${jackson-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-annotations</artifactId>
-			<version>${jackson-version}</version>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>${lombok-version}</version>
+		    <scope>provided</scope>
 		</dependency>
 		
-	
+		<!-- Database -->
+		<dependency>
+    		<groupId>mysql</groupId>
+   			<artifactId>mysql-connector-java</artifactId>
+    		<version>${mysql-version}</version>
+		</dependency>
+		<dependency>
+   			 <groupId>org.mybatis</groupId>
+   			 <artifactId>mybatis</artifactId>
+   			 <version>${mybatis-version}</version>
+		</dependency>
+		<dependency>
+   			 <groupId>org.mybatis</groupId>
+    		 <artifactId>mybatis-spring</artifactId>
+    		 <version>${mybatis-spring-version}</version>
+		</dependency>
+		
+		<!-- Jackson -->
+		<dependency>
+   			 <groupId>com.fasterxml.jackson.core</groupId>
+    		 <artifactId>jackson-databind</artifactId>
+    		 <version>${jackson-version}</version>
+		</dependency>
+		<dependency>
+    		<groupId>com.fasterxml.jackson.core</groupId>
+    		<artifactId>jackson-core</artifactId>
+    		<version>${jackson-version}</version>
+		</dependency>
+		<dependency>
+   			 <groupId>com.fasterxml.jackson.core</groupId>
+   			 <artifactId>jackson-annotations</artifactId>
+   			 <version>${jackson-version}</version>
+		</dependency>
+			
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
