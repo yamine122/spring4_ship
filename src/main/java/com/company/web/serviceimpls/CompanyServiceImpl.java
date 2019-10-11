@@ -9,7 +9,7 @@ public class CompanyServiceImpl implements CompanyService{
 	private static CompanyServiceImpl instance = new CompanyServiceImpl();
 	
 	public static CompanyServiceImpl getInstance() {return instance;}
-	
+	//3
 	private CompanyServiceImpl() {}
 	
 	@Override
